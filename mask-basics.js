@@ -19,17 +19,17 @@ allMasks["basics"] = {
 
     //     face.mouth an array of contours,
     // each of which is an array of Vecto2D
-    //     face.mouth.forEach((contour, index) => {
-    //       p.fill(index*50, 100, 50)
-    //       p.beginShape()
-    //       contour.forEach(pt => {
-    //         // p.circle(...pt, 4)
-    //         // p.text("❤️", ...pt)
-    //         p.vertex(...pt)
-    //       })
+//         face.mouth.forEach((contour, index) => {
+//           p.fill(index*50, 100, 50)
+//           p.beginShape()
+//           contour.forEach(pt => {
+//             // p.circle(...pt, 4)
+//             // p.text("❤️", ...pt)
+//             p.vertex(...pt)
+//           })
 
-    //       p.endShape()
-    //     })
+//           p.endShape()
+//         })
 
     // Using drawPoints
     p.stroke(0, 100, 50);
@@ -47,33 +47,33 @@ allMasks["basics"] = {
     // SIDES!
     face.sides.forEach((side, sideIndex) => {
       // Inside a side
-      // p.strokeWeight(4)
-      // p.circle(...side.eyeCenter, 5)
-      // p.strokeWeight(1)
-      //       side.face.forEach((contour, index) => {
+//       p.strokeWeight(4)
+//       p.circle(...side.eyeCenter, 5)
+//       p.strokeWeight(1)
+//             side.face.forEach((contour, index) => {
 
-      //         let hue = (sideIndex*100 + 10*index)%360
-      //         p.fill(hue, 100, 50 - 10*index, 1)
-      //         p.stroke(hue, 100, 100 - 10*index, 1)
-      //         drawContour(p, contour, {
-      //           close: true
-      //         })
-      //       })
+//               let hue = (sideIndex*100 + 10*index)%360
+//               p.fill(hue, 100, 50 - 10*index, 1)
+//               p.stroke(hue, 100, 100 - 10*index, 1)
+//               drawContour(p, contour, {
+//                 close: true
+//               })
+//             })
 
       p.stroke(0);
       p.noFill();
-      //        drawRibbon(p, side.eye[0], side.eye[1], {
-      //          close: true,
-      //          curve: true,
+//              drawRibbon(p, side.eye[0], side.eye[1], {
+//                close: true,
+//                curve: true,
 
-      //        })
+//              })
 
-      //        drawContour(p, side.eye[0], {
-      //          close: true,
-      //          curve: true,
+//              drawContour(p, side.eye[0], {
+//                close: true,
+//                curve: true,
 
-      //          // lerpToPoint: side.eyeCenter
-      //        })
+//                // lerpToPoint: side.eyeCenter
+//              })
 
       p.strokeWeight(0.4);
       for (var i = 0; i < 10; i++) {
@@ -89,7 +89,7 @@ allMasks["basics"] = {
             return (-0.4 * i + 0.2 * Math.sin(ptIndex + t * 2)) * 0.3;
           },
 
-          // lerpToPoint: side.eyeCenter,
+          //lerpToPoint: side.eyeCenter,
           lerpToPoint: face.top,
         });
       }

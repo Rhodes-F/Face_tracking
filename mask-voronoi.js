@@ -94,26 +94,26 @@ allMasks["voronoi"] = {
 
          // ---------------------
        // Draw a line to each of the neighboring points
-        // neighbors.forEach((pt) => {
-        //   if (pt) center.drawLineTo(p, pt);
-        // });
+//         neighbors.forEach((pt) => {
+//           if (pt) center.drawLineTo(p, pt);
+//         });
 
-        //         // ------------
-        //         //  Swuigglier: draw curves through the edge point, but also the neighbor
-        //         // How much should we move toward the neighbor? make it ... uh, sin-wave?
-        //         p.beginShape();
+//                 // ------------
+//                 //  Swuigglier: draw curves through the edge point, but also the neighbor
+//                 // How much should we move toward the neighbor? make it ... uh, sin-wave?
+//                 p.beginShape();
 
-        //         startPoints.forEach((pt, index) => {
-        //           let n = neighbors[index];
-        //           if (n) {
-        //             pt2.setTo(n);
-        //             pt2.lerpTo(center, Math.sin(t));
-        //             p.curveVertex(...pt2);
-        //           }
+//                 startPoints.forEach((pt, index) => {
+//                   let n = neighbors[index];
+//                   if (n) {
+//                     pt2.setTo(n);
+//                     pt2.lerpTo(center, Math.sin(t));
+//                     p.curveVertex(...pt2);
+//                   }
 
-        //           p.curveVertex(...pt);
-        //         });
-        //         p.endShape(p.CLOSE);
+//                   p.curveVertex(...pt);
+//                 });
+//                 p.endShape(p.CLOSE);
       }
     );
   },
