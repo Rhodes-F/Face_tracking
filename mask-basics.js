@@ -88,9 +88,9 @@ allMasks["basics"] = {
           lerpPct(ptIndex, pct, pt) {
             return (-0.4 * i + 0.2 * Math.sin(ptIndex + t * 2)) * 0.3;
           },
-
-          //lerpToPoint: side.eyeCenter,
-          lerpToPoint: face.top,
+          // lerpToPoint: face.top,
+          lerpToPoint: side.eyeCenter,
+          
         });
       }
 
