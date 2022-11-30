@@ -18,6 +18,9 @@ allMasks["kate"] = {
       p.circle(...side.eyeCenter, side.eyeWidth * 0.2);
       p.circle(...side.eyeInner, 3);
       p.circle(...side.eyeOuter, 3);
+      
+      
+      p.fill(360,100,50,1)
       p.circle(...side.eyeTop, 3);
       p.circle(...side.eyeBottom, 3);
 
