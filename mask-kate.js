@@ -9,7 +9,7 @@ allMasks["kate"] = {
   },
 
   draw(p, face) {
-    // p.clear()
+    p.clear()
     p.background(0, 0, 0, .01);
     let t = p.millis() * 0.001;
 
@@ -21,7 +21,7 @@ allMasks["kate"] = {
       p.circle(...side.eyeTop, 3);
       p.circle(...side.eyeBottom, 3);
 
-      p.fill(320, 100, 50, 0.3);
+      p.fill(150, 100, 50, 1);
       p.stroke(0);
       
        
@@ -37,12 +37,13 @@ allMasks["kate"] = {
           }
         },
         side1: {
-          // lerpToPoint: side.eyeCenter,
-          // lerpPct: -1,
+          lerpToPoint: side.eyeCenter,
+          lerpPct: -1,
         }
       });
     });
     
+    p.fill(300,100,50,1)
     p.circle(...face.bottom, 20);
     p.circle(...face.nose, 20);
     p.circle(...face.top, 20);
