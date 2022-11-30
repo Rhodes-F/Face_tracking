@@ -33,7 +33,7 @@ allMasks["kate"] = {
         side0: {
           lerpToPoint: side.eyeCenter,
           lerpPct: (index, pct) => {
-            return -10*p.noise(pct*10 + t)*pct
+            return -1*p.noise(pct*100 + t)*pct
           }
         },
         side1: {
