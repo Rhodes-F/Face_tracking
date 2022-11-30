@@ -50,12 +50,12 @@ reinventing
  
 ## How do you feel wearing this mask? 
 
-I think this mask is very fun to wear. I love looking how the mouth changes as I open and close my mouth and I love how the 
+I think this mask is very fun to wear. I love looking how the mouth changes as I open and close my mouth and I love how the horns stick off the face very far. 
 
 ## List any resources (code, images, etc) you've used, and where you got them from
 
---your answer here--
+Example codes
 
 ## List any help you got from classmates or websites, so that you can remember it for later
 
---your answer here--
+example code
