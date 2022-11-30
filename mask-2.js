@@ -11,12 +11,12 @@ allMasks["white walker"] = {
     p.clear();
     
     let t = p.millis() * 0.001;
-
+    p.background(200,100,50 + 50*Math.sin(.5*t))
     face.sides.forEach((side, sideIndex) => {
       
 
       p.fill(200,100,50 - 50*Math.cos(t))
-      p.stroke(100);
+      p.stroke(200,100,50 - 50*Math.cos(t));
       
        
       
@@ -25,7 +25,7 @@ allMasks["white walker"] = {
         close: true,
         
         side0: {
-          lerpToPoint: side.eyeCenter,
+          lerpToPoint: face.nose,
           lerpPct: (index, pct) => {
             return -7*p.noise(pct*100 + t)*pct
           }
@@ -38,8 +38,8 @@ allMasks["white walker"] = {
 
 
       //background
-      p.fill(100);
-      p.stroke(100);
+      // p.fill(100);
+      // p.stroke(100);
       p.beginShape();
       drawPoints(p, side.face[0].slice(0, 18));
       p.vertex(...face.bottom);

@@ -1,24 +1,22 @@
 # A8: Masks
 
 ## Your name
-Test McStudent
-
+Rhodes Fotopulos
 ## Your Glitch link
-[my page](https://galaxykate-a8.glitch.me)
+[my page](https://rhodes-a8.glitch.me)
 
 
 ## Describe your first mask
 
---your answer here--
-
+My first mask is mask-1 which is a clown mask. This mask has moving eyebrowns that are red and a lauging mouth that follows the contour of the users mask. It also has scary red and balck eyes and a red nose
 ## What inspirations (from the in-class materials or elsewhere) did you use for this mask? 
 
---your answer here (even if you ended up somewhere else!)--
+I wanted to make a scary clown mask whcih was based on pennywise. I used the in class mask as a base
 
 
 ## How does your mask relate to its background?
 
---your answer here--
+The eyes are on the user's eyes and the nose is on the user's nose. The mouth also shoudl trace the shape of the eusers mouth but it grows and shrinks like laughing. 
 
 
 ## What of the Homuncular flexibility terms apply to this mask?  (restoring, replacing, reinventing, ipsimoda remapping, sensory substitution, parasynthetic expression) 
