@@ -10,8 +10,8 @@ allMasks["clown mask"] = {
 
   draw(p, face) {
     p.clear()
-    p.background(0, 0, 0, .01);
     let t = p.millis() * 0.001;
+    p.background(50 + 50*Math.sin(.5*t))
 
   
     face.sides.forEach((side, sideIndex) => {
@@ -25,11 +25,12 @@ allMasks["clown mask"] = {
       p.fill(0);
       p.stroke(0)
       p.circle(...side.eyeCenter, 10);
-      // p.circle(...side.eyeInner, 3);
-      // p.circle(...side.eyeOuter, 3);
+      p.circle(...side.eyeInner, 3);
+      p.circle(...side.eyeOuter, 3);
       
       
       p.fill(360,100,50,1)
+      p.stroke(360,100,50,1)
       p.circle(...side.eyeTop, 3);
       p.circle(...side.eyeBottom, 3);
 
