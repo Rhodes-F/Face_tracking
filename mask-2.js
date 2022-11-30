@@ -13,11 +13,29 @@ allMasks["white walker"] = {
     let t = p.millis() * 0.001;
 
     face.sides.forEach((side, sideIndex) => {
-      if (sideIndex == 0) {
-        this.color = [144, 47, 28];
-      } else {
-        this.color = [348, 100, 37];
-      }
+      
+
+      p.fill(200,100,50 - 50*Math.cos(t))
+      p.stroke(100);
+      
+       
+      
+      drawRibbon(p, side.eye[0].slice(0, 10), side.eye[4].slice(0, 10), {
+        curve: true,
+        close: true,
+        
+        side0: {
+          lerpToPoint: side.eyeCenter,
+          lerpPct: (index, pct) => {
+            return -7*p.noise(pct*100 + t)*pct
+          }
+        },
+        side1: {
+          // lerpToPoint: side.eyeCenter,
+          // lerpPct: -1,
+        }
+      });
+
 
       //background
       p.fill(100);
